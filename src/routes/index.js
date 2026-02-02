@@ -3,6 +3,7 @@ import { Router } from "express";
 const router = Router();
 
 router.get("/health", (req, res) => {
+  // just for initial test
   res.status(200).json({
     success: true,
     message: "Server is running",
