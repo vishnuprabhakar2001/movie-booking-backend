@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Movie Booking Backend System | Node.js, Express, MongoDB
 Project Summary
 
@@ -268,19 +267,18 @@ The backend follows a modular and scalable folder structure with clear separatio
 movie-booking-backend/
 │
 ├── src/
-│   ├── config/
-│   │   └── db.js              # MongoDB connection using Mongoose
-│   │
-│   ├── routes/
-│   │   └── index.js           # Base routes and health check
-│   │
-│   ├── app.js                 # Express app configuration and middleware
-│   └── server.js              # Server startup and port binding
+│ ├── config/
+│ │ └── db.js # MongoDB connection using Mongoose
+│ │
+│ ├── routes/
+│ │ └── index.js # Base routes and health check
+│ │
+│ ├── app.js # Express app configuration and middleware
+│ └── server.js # Server startup and port binding
 │
-├── .env                       # Environment variables (ignored by Git)
-├── package.json               # Dependencies and scripts
+├── .env # Environment variables (ignored by Git)
+├── package.json # Dependencies and scripts
 └── README.md
-
 
 This structure is designed to scale with additional folders such as:
 
@@ -379,12 +377,11 @@ Health Check Endpoint
 
 GET /api/health
 
-
 Response
 
 {
-  "success": true,
-  "message": "Server is running"
+"success": true,
+"message": "Server is running"
 }
 
 Non-Functional Requirements
@@ -420,4 +417,3 @@ Author
 Vishnu Prabhakar
 Backend Developer | Node.js
 B.Tech in Artificial Intelligence & Data Science
->>>>>>> 915b439bddbaef9f8f6ec3e74e8c35177b5c3d97
