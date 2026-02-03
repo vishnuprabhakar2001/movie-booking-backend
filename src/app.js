@@ -1,11 +1,14 @@
 import express from "express";
-import routes from "./routes/index.js";
+import cityRoutes from "./routes/city.routes.js";
+import errorHandler from "./utils/ErrorHandler.js";
 
 const app = express();
 
 app.use(express.json());
 
-// base routes
-app.use("/api", routes);
+app.use("/api/cities", cityRoutes);
+
+// ❗ MUST be last
+app.use(errorHandler);
 
 export default app;
