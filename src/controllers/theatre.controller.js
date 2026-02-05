@@ -38,7 +38,7 @@ export const createTheatre = asyncHandler(async (req, res) => {
 
 // Get All Theatres
 export const getAllTheatres = asyncHandler(async (req, res) => {
-  const theatres = await Theatre.find().populate("city", "name");
+  const theatres = await Theatre.find().populate("city", "name"); // Here in populate, city has id as a referenc and populate will get all the fields along with id of the docments in place of just id the city's id belongs to for the second string where we can enter multiple value as per our requirements of the documents e.g.:- "name ..... ....."
 
   return res
     .status(200)
